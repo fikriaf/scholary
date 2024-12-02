@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Griffy&family=Metal+Mania&family=Squada+One&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Squada One", sans-serif;
+}
+
+body {
+    height: 100%;
+}
+.bgnya {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 1030vh;
+    z-index: -1;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#navbar.active {
+    background-color: #000000; /* Warna latar belakang saat header aktif */
+}
+#navbar a {
+    color: white;
+    font-size: 1.25em;
+    margin: 0 27px;
+}
+#navbar .navbar-brand{
+    margin-left: 40px;
+    color: cyan;
+    font-size: 34px;
+}
+#navbarSupportedContent {
+    margin-left: 30px;
+}
+#navbarSupportedContent .dropdown-menu a {
+    color: black;
+    margin: 0 0px;
+    font-size: 1em;
+}
+#login {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    border: 2px white solid;
+    font-size: x-large;
+    width: 110px;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0 5%;
+    transition: color 0.5s;
+}
+#login:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.d-flex input {
+    opacity: 50%;
+    width: 225px;
+}
+.d-flex img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    right: 40px;
+    transform: rotateY('angle');
+}
+.isi {
+    position: absolute;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    body {
+        height: 100%;
+    }
+    .bg {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 110%;
+    }
+    #navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }   
+    #navbar .navbar-brand{
+        margin-left: 10px;
+        color: cyan;
+        font-size: 30px;
+    }
+
+    #login {
+        position: relative;
+        color: white;
+        background-color: transparent;
+        border: 2px white solid;
+        font-size: x-large;
+        width: 110px;
+        border-radius: 15px;
+        margin-bottom: 2%;
+        transition: color 0.5s;
+    }
+    #login:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: 2px rgb(255, 255, 255) solid;
+    }
+    .isi {
+        position: absolute;
+        margin-top: 18%;
+        width: 100%;
+        text-align: center;
+    }
+    .bgnya {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 277vh;
+        z-index: -1;
+    }
+    .isi img {
+        width: 100%;
+    }
+}
