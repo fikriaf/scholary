@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Griffy&family=Metal+Mania&family=Squada+One&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Squada One", sans-serif;
+}
+
+body {
+    height: 100%;
+}
+.bg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#navbar.active {
+    background-color: #000000; /* Warna latar belakang saat header aktif */
+}
+#navbar a {
+    color: white;
+    font-size: 1.25em;
+    margin: 0 27px;
+}
+#navbar .navbar-brand{
+    margin-left: 40px;
+    color: cyan;
+    font-size: 34px;
+}
+#navbarSupportedContent {
+    margin-left: 30px;
+}
+#navbarSupportedContent .dropdown-menu a {
+    color: black;
+    margin: 0 0px;
+    font-size: 1em;
+}
+#login {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    border: 2px white solid;
+    font-size: x-large;
+    width: 110px;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0 5%;
+    transition: color 0.5s;
+}
+#login:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.d-flex input {
+    opacity: 50%;
+    width: 225px;
+}
+.d-flex img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    right: 40px;
+    transform: rotateY('angle');
+}
+.daftar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 110%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px #000000 solid;
+    z-index: -1;
+}
+.daftar{
+    width: 480px;
+    padding: 0 15px;
+    padding-top: 15px;
+    position: relative;
+    top: 130px;
+    left: 30%;
+    color: #000000;
+    z-index: 1;
+}
+.daftar h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.item-daftar {
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+
+.item-daftar input{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+}
+.item-daftar .nama{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .email{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .tgl{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .jenjang{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .sekolah{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .password{
+    margin-right: 20px;
+    width: 110px;
+}
+.item-daftar .repassword{
+    margin-right: 10px;
+    width: 120px;
+}
+.button-daftar #loginDaftar{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000000;
+    color: aqua;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background-color 0.5s, color 0.5s;
+}
+.button-daftar #loginDaftar:hover {
+    background-color: aqua;
+    color: black;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    body {
+        height: 100%;
+    }
+    .bg {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 110%;
+    }
+    #navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }   
+    #navbar .navbar-brand{
+        margin-left: 10px;
+        color: cyan;
+        font-size: 30px;
+    }
+
+    #login {
+        position: relative;
+        color: white;
+        background-color: transparent;
+        border: 2px white solid;
+        font-size: x-large;
+        width: 110px;
+        border-radius: 15px;
+        margin-bottom: 2%;
+        transition: color 0.5s;
+    }
+    #login:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: 2px rgb(255, 255, 255) solid;
+    }
+    .daftar::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 110%;
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 2px #000000 solid;
+        z-index: -1;
+    }
+    .daftar{
+        width: 280px;
+        padding: 0 15px;
+        padding-top: 15px;
+        position: relative;
+        top: 130px;
+        left: 15%;
+        color: #000000;
+        z-index: 1;
+    }
+}
