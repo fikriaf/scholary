@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Griffy&family=Metal+Mania&family=Squada+One&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Squada One", sans-serif;
+}
+
+body {
+    height: 100%;
+}
+video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.bg2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#navbar.active {
+    background-color: #000000; /* Warna latar belakang saat header aktif */
+}
+#navbar a {
+    color: white;
+    font-size: 1.25em;
+    margin: 0 27px;
+}
+#navbar .navbar-brand{
+    margin-left: 40px;
+    color: cyan;
+    font-size: 34px;
+}
+#navbarSupportedContent {
+    margin-left: 30px;
+}
+#navbarSupportedContent .dropdown-menu a {
+    color: black;
+    margin: 0 0px;
+    font-size: 1em;
+}
+#login {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    border: 2px white solid;
+    font-size: x-large;
+    width: 110px;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 0 5%;
+    transition: color 0.5s;
+}
+#login:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.d-flex input {
+    opacity: 50%;
+    width: 225px;
+}
+.d-flex img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    right: 40px;
+    transform: rotateY('angle');
+}
+#notif {
+    top: 90%;
+    left: 1200px;
+}
+.contentny {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+}
+.mvp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.mvp div a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0 40px;
+    margin: 0 30px;
+}
+
+.mvp .smp::before,
+.mvp .sma::before,
+.mvp .kuliah::before,
+.mvp .mitra::before{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    background-color: #fff;
+    z-index: -1;
+    cursor: pointer;
+}
+.mvp .smp::before{
+    top: 0px;
+    left: 40px;
+}
+.mvp .sma::before{
+    top: 0px;
+    left: 40px;
+}
+.mvp .kuliah::before{
+    top: 0px;
+    left: 50px;
+}
+.mvp .mitra::before{
+    top: 0px;
+    left: 15px;
+}
+.mvp div{
+    transition: all 0.5s ease;
+    transform: skew(150deg);
+}
+.mvp .smp:hover,
+.mvp .sma:hover,
+.mvp .kuliah:hover,
+.mvp .mitra:hover {
+  transform: translateX(20px);
+}
+#content-introduction {
+    position: relative;
+    top: 150px;
+}
+#content-introduction h1{
+    font-size: 5em;
+    color:  white;
+}
+#explore {
+    position: relative;
+    color: cyan;
+    background-color: transparent;
+    border: 2px white solid;
+    font-size: x-large;
+    width: 110px;
+    padding: 0px;
+    border-radius: 15px;
+    transition: color 0.5s;
+}
+#explore:hover {
+    color: rgb(0, 0, 0);
+    background-color: cyan;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.scroll-area {
+    width: 280px;
+    height: 300px;
+    overflow: auto; 
+    border: 2px solid cyan;
+    position: relative;
+    background-color: white;
+    left: 700px;
+    top: 50px;
+}
+.head-rank {
+    width: 277px;
+    background-color: gold;
+    border: 1px red solid;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 701px;
+}
+#ranking-list {
+    display: flex;
+    flex-direction: column;
+}
+.rank-item {
+display: flex;
+align-items: center;
+width: 259px;
+height: 40px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.rank {
+flex: 1;
+text-align: center;
+}
+
+.user {
+flex: 3;
+text-align: left;
+padding-left: 10px;
+}
+
+.score {
+flex: 2;
+text-align: center;
+}
+
+.rank-item:hover {
+background-color: #f0f0f0;
+cursor: pointer;
+}
+.goto-kuis {
+    position: absolute;
+    display: grid;
+    top: 130px;
+    left: 1000px;
+    justify-items: center;
+}
+.goto-kuis input,
+.goto-kuis button{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.goto-kuis img {
+    height: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    #navbar {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }   
+    #navbar .navbar-brand{
+        margin-left: 10px;
+        color: cyan;
+        font-size: 30px;
+    }
+    .contentny {
+        position: absolute;
+        top: 20%;
+        left: 7%;
+    }
+    .mvp {
+        display: grid;
+    }
+    .mvp div {
+        margin: 10px 0;
+    }
+    .mvp div a{
+        position: relative;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 3px 70px;
+        margin-left: 50px;
+        background-color: #000000;
+    }
+    .mvp .kuliah a{
+        text-decoration: none;
+        font-size: 14px;
+        padding: 3px 65px;
+        margin-left: 50px;
+        background-color: #000000;
+    }
+    .mvp .mitra a{
+        text-decoration: none;
+        font-size: 14px;
+        padding: 3px 82px;
+        margin-left: 50px;
+        background-color: #000000;
+    }
+    .mvp .smp::before,
+    .mvp .sma::before,
+    .mvp .kuliah::before,
+    .mvp .mitra::before{
+        content: "";
+        position: absolute;
+        width: 215px;
+        height: 20px;
+        background-color: #fff;
+        z-index: -1;
+        cursor: pointer;
+    }
+    .mvp .smp::before{
+        top: 8px;
+        left: 20%;
+    }
+    .mvp .sma::before{
+        top: 8px;
+        left: 20%;
+    }
+    .mvp .kuliah::before{
+        top: 8px;
+        left: 20%;
+    }
+    .mvp .mitra::before{
+        top: 8px;
+        left: 20%;
+    }
+    #content-introduction {
+        position: relative;
+        top: 150%;
+        text-align: center;
+    }
+    #content-introduction h1{
+        font-size: 34px;
+        width: 300px;
+        color:  white;
+        
+    }
+    #login {
+        position: relative;
+        color: white;
+        background-color: transparent;
+        border: 2px white solid;
+        font-size: x-large;
+        width: 110px;
+        border-radius: 15px;
+        transition: color 0.5s;
+    }
+    #login:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: 2px rgb(255, 255, 255) solid;
+    }
+    .scroll-area {
+        width: 140px;
+        height: 180px;
+        overflow: auto; 
+        border: 2px solid cyan;
+        position: absolute;
+        background-color: white;
+        left: 55%;
+        top: 490%;
+    }
+    .head-rank {
+        width: 140px;
+        background-color: gold;
+        border: 1px red solid;
+        text-align: center;
+        position: absolute;
+        top: 470%;
+        left: 55%;
+    }
+    #ranking-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .rank-item {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        height: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    .goto-kuis {
+        top: 380%;
+        left: -10%;
+    }
+    .goto-kuis input,
+    .goto-kuis button{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .goto-kuis img {
+        height: 100px;
+    }
+    .rank {
+        flex: 1;
+        text-align: center;
+    }
+    .user {
+        flex: 3;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .bg2 {
+        position: absolute;
+        top: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
